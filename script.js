@@ -1,11 +1,11 @@
 const list = document.getElementById('todo-list')
 const itemCountSpan = document.getElementById('item-count')
 const uncheckedCountSpan = document.getElementById('unchecked-count')
-
+// Завдання 3: Функція для збереження списку справ у Local Storage
 function saveToLocalStorage() {
   localStorage.setItem('todos', JSON.stringify(todos));
 }
-
+// Завдання 3: Функція для завантаження списку справ з Local Storage
 function loadFromLocalStorage() {
   const saved = localStorage.getItem('todos');
   if (saved) {
